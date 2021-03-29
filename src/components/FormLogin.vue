@@ -5,7 +5,7 @@
         <label for="mail"><input type="email" placeholder="email@email.com"></label>
         <label for="password"><input type="epassword" placeholder="password"></label>
       </form>
-      <button href="/dashboard" type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+      <a href="/dashboard" type="submit"><i class='bx bx-right-arrow-alt'></i></a>
       <small>Don’t have on account? <strong><a href="/signup">Sign Up</a></strong></small>
    </div>
 </template>
@@ -51,7 +51,7 @@ export default {
       padding-left: 20px;
     }
 
-    button {
+    a {
       width: 48px;
       height: 48px;
 
