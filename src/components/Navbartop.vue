@@ -1,17 +1,14 @@
 <template>
   <section class="navbartop">
    <a href="#" class="new-order-btn">+ New Order</a>
-   <div class="profile-sign-in">
-    <img src="https://i.pravatar.cc/150?img=3" alt="">
-    <h4>Hi John Doe</h4>
-    <i class='bx bxs-down-arrow'></i>
-   </div>
+   <Profile />
   </section>
 </template>
 
 <script>
+import Profile from './Profile.vue'
 export default {
-
+  components: {Profile}
 }
 </script>
 
