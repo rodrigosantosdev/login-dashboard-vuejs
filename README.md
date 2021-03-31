@@ -1,24 +1,13 @@
-# vuejs-login-dasboard
+# Projeto em vuejs 3
 
-## Project setup
-```
-npm install
-```
+- Projeto de estudo em vuejs 3, desde o layout ate a codificação dele.
+para fins de estudo.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- [ x ] criação de tela de login
+- [ x ] criação de tela de signup
+- [ x ] criação de tela de dashboard
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
