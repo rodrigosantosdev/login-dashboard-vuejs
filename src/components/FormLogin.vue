@@ -5,7 +5,9 @@
         <label for="mail"><input type="email" placeholder="email@email.com"></label>
         <label for="password"><input type="epassword" placeholder="password"></label>
       </form>
-      <a href="/dashboard" type="submit"><i class='bx bx-right-arrow-alt'></i></a>
+      <div class="btn-sign-in">
+        <a href="/dashboard"><i class='bx bx-right-arrow-alt'></i></a>
+      </div>
       <small>Don’t have on account? <strong><a href="/signup">Sign Up</a></strong></small>
    </div>
 </template>
@@ -16,7 +18,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
 .content__form {
     width: 455px;
     display: flex;
@@ -51,29 +54,45 @@ export default {
       padding-left: 20px;
     }
 
-    a {
-      width: 48px;
-      height: 48px;
-
-      border: none;
-      border-radius:50%;
-      background-color: var(--primary);
-
-      margin-top: 42px;
-      margin-bottom: 42px;
-
-      i {
-        font-size: 24px;
-        color: var(--secondary);
-      }
-    }
-
     small {
       color: var(--dark);
 
       a {
         color: var(--dark);
       }
+
+      a:hover {
+        color: var(--black);
+      }
     }
+
+    .btn-sign-in {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius:50%;
+      background-color: var(--primary);
+      margin-top: 42px;
+      margin-bottom: 42px;
+
+      &:hover {
+        background:var(--dark);
+        transition: all 1s ease;
+      }
+
+      i {
+        font-size: 24px;
+        color: var(--secondary);
+      }
+    }
+}
+
+@media ( max-width: 1200px ) {
+  .content__form {
+    margin-top: 60px;  
+  }
 }
 </style>
