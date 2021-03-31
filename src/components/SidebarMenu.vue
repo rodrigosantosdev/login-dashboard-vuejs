@@ -1,8 +1,8 @@
 <template>
    <nav class="sidebarMenu">
       <div class="navBurguer">
-         <button type="button" @click="handdleToggle" aria-label="button navigation"><i class='bx bx-menu-alt-left'></i></button>
-      </div>
+         <button type="button" @click="handdleToggle" aria-label="button navigation"><i aria-hidden="true" class='bx bx-menu-alt-left'></i></button>
+      </div> 
       <nav class="navigation">
          <li><a href=""><i class='bx bx-home-alt'></i></a></li>
          <li><a href=""><i class='bx bxs-cart'></i></a></li>
@@ -49,14 +49,15 @@ export default {
 <style lang="scss">
 
    .sidebarMenu {
+      width: 100px;
+      height: 100vh;
+      
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       padding-top: 30px;
       padding-bottom: 30px;
-      width: 100px;
-      height: 100vh;
       background-color: var(--primary);
       font-size: 1.5rem;
    }
@@ -150,7 +151,5 @@ export default {
          color: var(--black);
       }
    }
-
-
-   
+ 
 </style>

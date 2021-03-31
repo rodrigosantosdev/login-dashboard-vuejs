@@ -67,7 +67,6 @@ export default {
     }
     
     .new-order {
-        height: 100%;
         margin-top: 30px;
         margin-left: 30px;
         margin-right: 30px;
@@ -81,7 +80,7 @@ export default {
 
     .table {
         width: 100%;
-
+        overflow-x: auto;        
         thead {
             background-color:var(--gray-light);
         }
@@ -98,7 +97,6 @@ export default {
                 width: 150px;
             }
         }
-    }
-  
+    }  
 
 </style>

@@ -7,7 +7,7 @@
         <label for="password"><input type="epassword" placeholder="password"></label>
       </form>
       <button class="btn-sign-up" type="submit">Cadastrar</button>
-      <small>Have Account? <strong><a href="/login">Login</a></strong></small>
+      <small>Have Account? <strong><a href="/">Login</a></strong></small>
    </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 .content__form {
     display: flex;
@@ -68,5 +68,11 @@ export default {
    background-color: var(--primary);
    margin-top: 42px;
    margin-bottom: 42px;
+}
+
+@media ( max-width: 1260px ) {
+  .content__form {
+    margin-top: 60px;  
+  }
 }
 </style>
